@@ -1,0 +1,40 @@
+// =============================================================================
+// Typography
+// =============================================================================
+
+/**
+ * Extension for normalize.scss and acts as a reset. It always sits on top of
+ * the normalize.scss file. Logics based off:
+ *
+ * https://github.com/twbs/bootstrap/blob/master/scss/_reboot.scss
+ */
+
+/**
+ * Specify how overlines and unerlines are drawn
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-skip-ink
+ */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/**
+ * 1. Prevent the text-decoration to be skipped.
+ * 2. Add explicit cursor to indicate changed behavior.
+ */
+
+abbr[title] {
+	text-decoration-skip-ink: none; // 1
+
+	cursor: help; // 2
+}
+
+// Remove default styles from address.
+address {
+	font-style: normal;
+	line-height: inherit;
+}
+
+// Remove default background-color from `<mark>`
+mark {
+	background-color: transparent;
+}

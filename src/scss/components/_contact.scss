@@ -1,0 +1,29 @@
+// =============================================================================
+// Root
+// =============================================================================
+.c-contact {
+	position: relative;
+}
+
+// =============================================================================
+// Elements
+// =============================================================================
+.c-contact__title {
+	padding-bottom: 4rem;
+
+	@include respond-at("viewport-9") {
+		padding-bottom: 4rem;
+	}
+}
+
+.c-contact__orange {
+	width: 100%;
+    height: calc(100% + 8rem);
+    position: absolute;
+    top: -4rem;
+    left: 0;
+    z-index: -1;
+    transform: translateX(-25%);
+
+	background-color: $nude;
+}

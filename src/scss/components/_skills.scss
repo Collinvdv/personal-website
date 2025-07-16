@@ -1,0 +1,26 @@
+// =============================================================================
+// Root
+// =============================================================================
+.c-skills {
+	margin-top: 10rem;
+	margin-bottom: 10rem;
+
+	@include respond-at("viewport-7") {
+		margin-top: 12rem;
+		margin-bottom: 12rem;
+	}
+
+	@include respond-at("viewport-9") {
+		margin-top: 16rem;
+		margin-bottom: 16rem;
+	}
+}
+
+// =============================================================================
+// Elements
+// =============================================================================
+.c-skills__title {
+	@include respond-at("viewport-9") {
+		padding-bottom: 4rem;
+	}
+}

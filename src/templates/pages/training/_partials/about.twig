@@ -1,0 +1,34 @@
+<section class="l-section c-about" id="about">
+	<div class="l-container:12/12 l-container--with-default-spacing">
+		<div class="l-section__content">
+			<div class="l-grid l-grid--with-default-spacing">
+				<div class="l-grid__col:12/12 l-grid__col:6/12@at:viewport-9">
+					<h2>
+						{{ entry.homeAboutTitle | nl2br }}
+					</h2>
+
+					<div class="c-about__content">
+						<div>
+							{{ entry.homeAboutDescription | nl2br}}
+						</div>
+
+						{% include "/_components/link" with {
+							text: "Neem contact met me op",
+							url: "/#contact",
+						} %}
+					</div>
+				</div>
+
+				<div class="l-grid__col:2/12">
+				</div>
+
+				<div class="l-grid__col:12/12 l-grid__col:4/12@at:viewport-9 c-about__quote-wrapper">
+					{% include "/_components/quote" with {
+						text: entry.homeAboutQuote,
+						class: "c-about__quote",
+					} %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,93 @@
+// =============================================================================
+// Forms
+// =============================================================================
+
+/**
+ * Extension for normalize.scss and acts as a reset. It always sits on top of
+ * the normalize.scss file. Logics based off:
+ *
+ * https://github.com/twbs/bootstrap/blob/master/scss/_reboot.scss
+ */
+
+// Allow labels to use `margin` for spacing.
+label {
+	display: inline-block;
+}
+
+// Remove the default `border-radius` that macOS Chrome adds.
+button {
+	border-radius: 0;
+}
+
+// Remove the inheritance of word-wrap in Safari.
+select {
+	word-wrap: normal;
+}
+
+// Remove the dropdown arrow in Chrome from inputs built with datalists.
+[list]::-webkit-calendar-picker-indicator {
+	display: none;
+}
+
+// Add `pointer` cursor to non-disabled button elements.
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+
+	&:not(:disabled) {
+		cursor: pointer;
+	}
+}
+
+/**
+ * Textareas should really only resize vertically so they don't break their
+ * (horizontal) containers.
+ */
+textarea {
+	resize: vertical;
+}
+
+/**
+ * 1. Reset default `min-width: min-content;` on fieldsets in order to behave it
+ *    more like a standard block element.
+ * 2. Reset the default outline behavior
+ */
+fieldset {
+	min-width: 0; // 1
+	padding: 0; // 2
+
+	border: 0; // 2
+}
+
+/**
+ * 1. By using `float: left`, the legend will behave like a block element.
+ * 2. Reset default margin.
+ * 3. Fix wrapping bug.
+ */
+
+legend {
+	float: left; // 1
+	width: 100%;
+	margin: 0; // 2
+
+	+ * {
+		clear: left; // 3
+	}
+}
+
+// Fix height of inputs with type datetime-local, date, month, week, or time
+::-webkit-datetime-edit-fields-wrapper,
+::-webkit-datetime-edit-text,
+::-webkit-datetime-edit-minute,
+::-webkit-datetime-edit-hour-field,
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-year-field {
+	padding: 0;
+}
+
+// Remove padding around color pickers in webkit browsers
+::-webkit-color-swatch-wrapper {
+	padding: 0;
+}

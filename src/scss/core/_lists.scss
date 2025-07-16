@@ -1,0 +1,39 @@
+// =============================================================================
+// Lists
+// =============================================================================
+
+/**
+ * Extension for normalize.scss and acts as a reset. It always sits on top of
+ * the normalize.scss file. Logics based off:
+ *
+ * https://github.com/twbs/bootstrap/blob/master/scss/_reboot.scss
+ */
+
+// Remove trailing margins from nested lists.
+li > {
+
+	ol,
+	ul {
+		margin-bottom: 0;
+	}
+}
+
+ul:not([class]) {
+	list-style: none;
+
+	li {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	li::before {
+		content: "";
+		height: 1px;
+		background-color: $black;
+		width: 2rem;
+		display: inline-block;
+		flex-shrink: 0;
+		margin-right: 1.5rem;
+		margin-top: 1.2rem;
+	}
+}

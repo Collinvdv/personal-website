@@ -1,0 +1,66 @@
+<section class="l-section c-projects" id="projects">
+	<div class="l-container:12/12 l-container--with-default-spacing">
+		<div class="l-section__content">
+			<div class="l-grid l-grid l-grid--with-default-spacing">
+				<div class="l-grid__col:12/12">
+					<h2 class="c-projects__title">
+						{{ entry.homeProjectsTitle | nl2br }}
+					</h2>
+				</div>
+
+				<div class="l-grid__col:12/12 l-grid__col:1/12@at:viewport-9">
+				</div>
+
+				<div class="l-grid__col:12/12 l-grid__col:3/12@at:viewport-9">
+					<h4 class="c-projects__subtitle">
+						{{ entry.homeProjectsSubtitle2 }}
+					</h4>
+				</div>
+
+				<div class="l-grid__col:12/12 l-grid__col:8/12@at:viewport-9 c-projects__overview" >
+					<div class="l-grid l-grid--with-default-spacing">
+						<div class="l-grid__col:12/12">
+							{% for item in entry.homeProjectsItems2.all() %}
+								{% include "/_components/project" with {
+									title: item.mxTitle,
+									text: item.mxDescription,
+									linkUrl: item.mxLink,
+									linkText: item.mxLinkText,
+									icon: "arrow_up_right"
+								} %}
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+
+				<div class="l-grid__col:1/12">
+				</div>
+
+				<div class="l-grid__col:12/12 l-grid__col:3/12@at:viewport-9">
+					<h4 class="c-projects__subtitle">
+						{{ entry.homeProjectsSubtitle1 }}
+					</h4>
+				</div>
+
+				<div class="l-grid__col:12/12 l-grid__col:8/12@at:viewport-9 c-projects__overview" >
+					<div class="l-grid l-grid--with-default-spacing">
+						<div class="l-grid__col:12/12">
+							{% for item in entry.homeProjectsItems1.all() %}
+								{% include "/_components/project" with {
+									title: item.mxTitle,
+									text: item.mxDescription,
+									linkUrl: item.mxLink,
+									linkText: item.mxLinkText,
+									icon: "arrow_up_right"
+								} %}
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+
+				<div class="c-projects__black">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

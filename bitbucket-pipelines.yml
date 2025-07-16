@@ -1,0 +1,16 @@
+# Only use spaces to indent your .yml configuration.
+clone:
+  depth: 1
+
+pipelines:
+  branches:
+    master:
+     - step:
+        name: Update the production site
+        deployment: production   # can be test, staging or production
+        script:
+          - ssh collinvandervorstbe@ssh057.webhosting.be -T -t "cd /data/sites/web/collinvandervorstbe/web/collin-van-der-vorst ; git checkout ."
+          - ssh collinvandervorstbe@ssh057.webhosting.be -T -t "cd /data/sites/web/collinvandervorstbe/web/collin-van-der-vorst ; git pull origin master"
+          - ssh collinvandervorstbe@ssh057.webhosting.be -T -t "cd /data/sites/web/collinvandervorstbe/web/collin-van-der-vorst ; composer install"
+          - ssh collinvandervorstbe@ssh057.webhosting.be -T -t "cd /data/sites/web/collinvandervorstbe/web/collin-van-der-vorst ; ./craft migrate/all"
+          - ssh collinvandervorstbe@ssh057.webhosting.be -T -t "cd /data/sites/web/collinvandervorstbe/web/collin-van-der-vorst ; ./craft project-config/sync"

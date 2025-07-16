@@ -1,0 +1,16 @@
+// =============================================================================
+// Truncate typo
+// =============================================================================
+
+/**
+ * Add 3 dots to a text element that goes out of its bounds. This is always
+ * limited to one straight line.
+ */
+
+@mixin truncate-typo() {
+	width: 100%;
+	overflow: hidden;
+
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}

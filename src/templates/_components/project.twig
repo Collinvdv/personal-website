@@ -1,0 +1,30 @@
+{# ========================================================================== #}
+{# :: Variables #}
+{# ========================================================================== #}
+{% set class = class ?? "" %}
+{% set title = title ?? "" %}
+{% set text = text ?? "" %}
+{% set linkText = linkText ?? "" %}
+{% set linkUrl = linkUrl ?? "" %}
+
+{# ========================================================================== #}
+{# :: Component #}
+{# ========================================================================== #}
+<div class="c-projects__item {{class}}">
+	<h4 class="c-projects__item-title">
+		{{ title }}
+	</h4>
+
+	<div class="c-projects__item-content">
+		{{ text|raw }}
+	</div>
+
+	{% if linkUrl %}
+		{% include "/_components/link" with {
+			text: linkText,
+			url: linkUrl,
+			target: "_blank"
+		} %}
+	{% endif %}
+</div>
+

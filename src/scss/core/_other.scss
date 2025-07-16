@@ -1,0 +1,41 @@
+// =============================================================================
+// Other
+// =============================================================================
+
+/**
+ * Extension for normalize.scss and acts as a reset. It always sits on top of
+ * the normalize.scss file. Logics based off:
+ *
+ * https://github.com/twbs/bootstrap/blob/master/scss/_reboot.scss
+ */
+
+// Correct element displays
+output {
+	display: inline-block;
+}
+
+// Remove border from iframe
+iframe {
+	border: 0;
+}
+
+summary {
+	cursor: pointer;
+}
+
+/**
+ * Not supported yet in all browsers: only apply an outline if the itneraction
+ * that led to the element reciving programmatic focus was a keyboard
+ * interaction.
+ *
+ * https://github.com/twbs/bootstrap/blob/master/scss/_reboot.scss
+ */
+
+[tabindex="-1"]:focus:not(:focus-visible) {
+	outline: 0 !important; // stylelint-disable-line declaration-no-important
+}
+
+// Always hide an element with the `hidden` HTML attribute.
+[hidden] {
+	display: none !important; // stylelint-disable-line declaration-no-important
+}

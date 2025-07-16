@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 5fd5dfe6-4684-4ec8-b94b-0aaae1d9b339 # Home
+handle: homeProjectsItems2
+instructions: null
+name: 'Home projects items 2'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_homeprojectsitems2}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

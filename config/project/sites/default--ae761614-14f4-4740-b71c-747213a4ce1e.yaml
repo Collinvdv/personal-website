@@ -1,0 +1,9 @@
+baseUrl: $BASE_URL
+enabled: true
+handle: default
+hasUrls: true
+language: nl
+name: 'Collin Van der Vorst'
+primary: true
+siteGroup: 72f276d6-d313-46fe-af58-d4a8ca3c8dda # Delgouffe
+sortOrder: 1

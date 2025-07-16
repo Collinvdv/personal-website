@@ -1,0 +1,24 @@
+// =============================================================================
+// Definition
+// =============================================================================
+
+/**
+ * Main spacing file used for the distribution of consistent spacings throughout
+ * the styles. This map contains the spacing settings and source used by the
+ * @littlemissrobot/sass-spacing library to open up the usage of its system and
+ * mixins/functions.
+ *
+ * https://www.npmjs.com/package/@littlemissrobot/sass-spacing
+ */
+
+$lmr-sass-spacing: (
+	settings: (
+		baseline: 1rem
+	),
+	source: (
+		"x1": 1,
+		"x2": 2,
+		"x3": 3
+	)
+);
+

@@ -1,0 +1,52 @@
+// =============================================================================
+// Root
+// =============================================================================
+
+// =============================================================================
+// Elements
+// =============================================================================
+.c-about {
+	margin-top: 8rem;
+	margin-bottom: 8rem;
+
+	@include respond-at("viewport-7") {
+		margin-top: 12rem;
+		margin-bottom: 12rem;
+	}
+
+	@include respond-at("viewport-9") {
+		margin-top: 16rem;
+		margin-bottom: 16rem;
+	}
+}
+
+.c-about__content {
+	margin-top: 4rem;
+
+	@include respond-at("viewport-9") {
+		padding-left: 4rem;
+	}
+
+	.c-link {
+		margin-top: 2rem;
+		display: block;
+	}
+}
+
+.c-about__quote-wrapper {
+	display: none;
+	position: relative;
+
+	@include respond-at("viewport-9") {
+		display: block;
+	}
+}
+
+.c-about__quote {
+	@include respond-at("viewport-9") {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+}
+

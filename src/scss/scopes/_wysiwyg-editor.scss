@@ -1,0 +1,106 @@
+// =============================================================================
+// Settings
+// =============================================================================
+$list-item-size: 0.4rem;
+
+// =============================================================================
+// Root
+// =============================================================================
+
+/**
+ * Selector should only apply styles to elements without class. Always add
+ * margin-top to the elements based on the element that comes before.
+ */
+
+.s-wysiwyg-editor {
+
+	h1:not([class]),
+	h2:not([class]),
+	h3:not([class]),
+	h4:not([class]),
+	h5:not([class]),
+	h6:not([class]) {
+
+		& + p {
+			margin-top: 1rem;
+		}
+	}
+
+	p:not([class]) {
+
+		& + p:not([class]) {
+			margin-top: 1rem;
+		}
+
+		& + h1:not([class]),
+		& + h2:not([class]),
+		& + h3:not([class]),
+		& + h4:not([class]),
+		& + h5:not([class]),
+		& + h6:not([class]) {
+			margin-top: 3rem;
+		}
+	}
+
+	img:not([class]) {
+		margin: 6rem 0;
+	}
+
+	ul:not([class]) {
+		margin: 1rem 0 0.5rem;
+
+		list-style-type: none;
+
+		li:not([class]) {
+			position: relative;
+
+			margin-bottom: 0.5rem;
+			padding-left: 1.5rem;
+
+			&::before {
+				content: "";
+
+				position: absolute;
+				top: 1rem;
+				left: 0;
+
+				display: block;
+				width: $list-item-size;
+				height: $list-item-size;
+
+				border-radius: $list-item-size;
+			}
+
+			a:not([class]) {
+				&::after {
+					content: "";
+
+					position: absolute;
+					top: 5%;
+					right: -25px;
+
+					width: 1.5rem;
+					height: 1.5rem;
+					display: inline-block;
+
+					background-image: url("/assets/images/external-arrow.svg");
+					background-size: contain;
+					background-repeat: no-repeat;
+				}
+			}
+		}
+	}
+
+	a:not([class]) {
+		position: relative;
+
+		text-decoration: none;
+
+		background-position: 0% 100%;
+		background-repeat: no-repeat;
+		background-size: 100% $border-width-base;
+
+		transition: color $animation-duration-base ease-in-out;
+
+	}
+}

@@ -1,0 +1,160 @@
+dateModified: 1752669360
+email:
+  fromEmail: collinvdv@gmail.com
+  fromName: Delgouffe
+  replyToEmail: null
+  template: null
+  transportSettings:
+    encryptionMethod: ssl
+    host: smtp-auth.mailprotect.be
+    password: breco777
+    port: '465'
+    timeout: '10'
+    useAuthentication: '1'
+    username: forwarder@collinvandervorst.be
+  transportType: craft\mail\transportadapters\Smtp
+fs:
+  imagesAssets:
+    hasUrls: true
+    name: 'Images assets'
+    settings:
+      path: '@assetsBasePath/images'
+    type: craft\fs\Local
+    url: '@assetsBaseUrl/images'
+meta:
+  __names__:
+    0b7e1003-c291-4c3f-9bac-2b882242a703: 'Training who title' # Training who title
+    1a4dc4f0-bbdf-4c22-940b-4003a030b44e: 'Member titel ' # Member titel 
+    2c18e815-845f-4e66-ad4e-32c6847dc27f: 'Images assets' # Images assets
+    2cee545d-4096-421b-942d-4e8481fe3272: ProjectBlock # ProjectBlock
+    3c2ee676-e6d4-4fdd-8e30-9882ece1f676: 'Public Schema' # Public Schema
+    3d8cfeb1-2e6c-4e1e-9af0-c57fe197089c: 'Member omschrijving' # Member omschrijving
+    3fcab234-2e09-478f-9be0-f39872cbbb2c: 'Training program quote' # Training program quote
+    5d22236e-d797-404d-951e-3c732c7547bf: 'Training program items' # Training program items
+    5fd5dfe6-4684-4ec8-b94b-0aaae1d9b339: Home # Home
+    8b22d5b1-6a59-451c-ae95-e322dbad1b70: 'Training who description' # Training who description
+    8c84d899-5b2d-495e-ac3c-52d01ec9e5f3: 'Gallerij link' # Gallerij link
+    8e94c616-b9fa-4c16-82f4-1fffd0973bfa: Title # Title
+    9e9c5a41-7ebe-4d8c-aed8-8aee1ab975a4: 'Home skills items' # Home skills items
+    16f750d7-0329-44d8-bfa2-cde3803f4325: 'Gallerij titel ' # Gallerij titel 
+    27c528df-007f-4a09-9fd7-1c605816ac2b: 'Home about title' # Home about title
+    33b92e23-8203-4028-bcf0-6ba5d11a6c24: Afbeeldingen # Afbeeldingen
+    40fb81fd-202a-4f90-8a55-d871c36b97ac: Description # Description
+    44d62c54-6b6a-4882-bb64-f443d9e66b3d: Default # Default
+    66ba4790-4e8a-4d63-9447-aa10519ea3d0: Description # Description
+    72f276d6-d313-46fe-af58-d4a8ca3c8dda: Delgouffe # Delgouffe
+    77ff6b51-9435-45a0-bf02-1a16ac037f2a: 'Home skills quote' # Home skills quote
+    80ac6615-b278-461b-b77a-ab3d34c725e0: 'Gallerij afbeelding' # Gallerij afbeelding
+    507c095e-44f7-47d7-b1ca-dd6663d98aa0: 'Home intro title' # Home intro title
+    523d8e09-1929-4e84-a857-217bb7cbb693: ProjectBlock # ProjectBlock
+    845a361e-4f16-41d2-88c9-3632a7b7d936: 'Home intro subtitle' # Home intro subtitle
+    889e9633-1597-42c2-ad14-8bc1bd4cd17e: 'Home hire title' # Home hire title
+    925de582-7170-4843-a97e-7c7c2f0b91fa: Title # Title
+    5328b849-e8d7-4959-af0f-ebb5d8a4cdb2: Titel # Titel
+    6452fdde-cc8a-4c0f-af36-e5bf3582c1f6: SkillsBlock # SkillsBlock
+    20067e89-55d1-4011-971a-cb76d12d98ae: Home # Home
+    40878b79-42b3-4a9c-9b50-baba28fa51be: Description # Description
+    51762c61-786f-42ad-9415-2207be3f7ac2: 'Link text' # Link text
+    98468fb3-d27f-44df-b3a2-8d899263a29e: 'Home hire items' # Home hire items
+    438783c6-a978-438f-a2fa-8762d6062163: HireBlock # HireBlock
+    5293857a-1274-411a-bed2-77717e40a423: 'Training goal title' # Training goal title
+    a075fed3-5f80-4cdc-bc8d-22d045a3eb60: 'Home about desciption' # Home about desciption
+    a3c7bfeb-d7f7-410c-be4f-e80af3cdd872: 'Member afbeelding' # Member afbeelding
+    a8a5e6cd-c1b1-4839-9ac0-43ba05e9b206: 'Training program title' # Training program title
+    a290a9d8-da85-42ad-971e-ca8c4d209fe5: Description # Description
+    a7890ae9-a63e-450e-ac47-e107fc2b2874: Title # Title
+    ab2a992b-c13e-4b79-b232-dbd8487f5768: 'Home projects subtitle 1' # Home projects subtitle 1
+    ad5f1f69-c0a2-440c-8783-3c9974d1e7ea: 'Training intro description' # Training intro description
+    ae761614-14f4-4740-b71c-747213a4ce1e: 'Collin Van der Vorst' # Collin Van der Vorst
+    afdb79ef-b52e-4f7d-aca6-2e52c045d968: 'Home projects title' # Home projects title
+    b3c111d9-0a13-4069-a080-8f14d635954e: Training # Training
+    bf9789d9-7284-457f-ba5d-f00f85e08a2e: 'Home about quote' # Home about quote
+    c85bfbdf-64ba-41cb-8e42-b02fc3c0c366: Title # Title
+    cfc8cba1-bb43-4245-9fc6-d0688339cb79: Content # Content
+    d1b05498-6aa4-451c-91c3-e5f05044c6b7: Pages # Pages
+    d2b90f04-d625-4e7c-8942-cd4ca0291384: 'Home skills title' # Home skills title
+    d675a71a-e2dd-4100-9f66-d4ff3c636968: Link # Link
+    da6b6ea1-9f6b-4371-a7ed-e02115e1e9c7: 'Training intro title' # Training intro title
+    e431e6b4-7d07-43ed-946d-e355c94036c2: Link # Link
+    e51755d7-9c8f-413e-9220-f56b62644766: 'Training goal description' # Training goal description
+    ee6af0af-1268-4764-801c-013b9e558e11: Home # Home
+    ef1963e4-c282-49c5-94da-272a297968c4: 'Home projects subtitle 2' # Home projects subtitle 2
+    f0cb5dc5-133b-4644-b13d-280a2c5332d3: Description # Description
+    f1c1c2e8-74dc-4e9d-88ca-64919232d7e9: 'Link text' # Link text
+    f2cb2f1b-84c1-48bf-866a-fe95291e086f: Globals # Globals
+    f2e372ba-74f2-4e67-84ac-1ed5821cfe73: SkillsBlock # SkillsBlock
+    f160e6f9-051f-46a8-ad71-d037bcbd3eb2: 'Seo description' # Seo description
+    f28056ab-fb6b-491d-a750-70938b172d12: 'Home projects items 2' # Home projects items 2
+    fa7a85ab-edde-42f9-b828-74b098ec2371: 'Home projects items 1' # Home projects items 1
+    fd8e971a-b625-4d9f-9280-b0a8b9ae9a74: Title # Title
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  contact-form:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      allowAttachments: false
+      prependSender: ''
+      prependSubject: 'New message from delgouffe website!'
+      successFlashMessage: 'Message sent!'
+      toEmail: collinvdv@gmail.com
+  field-manager:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  minify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  seo:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.2.0
+    settings:
+      description: ''
+      facebookAppId: ''
+      metaTemplate: ''
+      removeAlternateUrls: ''
+      robots:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      robotsTxt: "{# Sitemap URL #}\r\nSitemap: {{ url(seo.sitemapName ~ '.xml') }}\r\n\r\n{# Disallows #}\r\n{% if craft.app.config.env != 'production' %}\r\n\r\n{# Disallow access to everything when NOT in production #}\r\nUser-agent: *\r\nDisallow: /\r\n\r\n{% else %}\r\n\r\n{# Disallow access to cpresources/ when live #}\r\nUser-agent: *\r\nDisallow: /cpresources/\r\n\r\n{% endif %}"
+      sitemapLimit: '1000'
+      sitemapName: sitemap
+      socialImage: ''
+      title:
+        -
+          __assoc__:
+            -
+              - key
+              - '2'
+            -
+              - locked
+              - '1'
+            -
+              - template
+              - 'Webdeveloper - {{ siteName }}'
+      titleSuffix: null
+      twitterHandle: ''
+system:
+  edition: solo
+  live: true
+  name: 'Collin Van der Vorst'
+  retryDuration: null
+  schemaVersion: 4.15.0.0
+  timeZone: Europe/Brussels
+users:
+  allowPublicRegistration: false
+  deactivateByDefault: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

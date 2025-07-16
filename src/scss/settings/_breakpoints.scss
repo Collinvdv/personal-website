@@ -1,0 +1,33 @@
+// =============================================================================
+// Definition
+// =============================================================================
+
+/**
+ * Contains configuration for the breakpoints. Each breakpoint receives a name
+ * starting with 'viewport' and followed by the amount of hundredths it belongs
+ * to. The order of these breakpoints is VERY IMPORTANT. They should be ordered
+ * from lowest to highest.
+ *
+ * https://www.npmjs.com/package/@littlemissrobot/sass-breakpoints
+ */
+
+$lmr-sass-breakpoints: (
+	viewport-0: (
+		width: 0rem
+	),
+	viewport-3: (
+		width: 36rem
+	),
+	viewport-4: (
+		width: 48rem
+	),
+	viewport-7: (
+		width: 72rem
+	),
+	viewport-9: (
+		width: 99.2rem
+	),
+	viewport-12: (
+		width: 120rem
+	)
+);

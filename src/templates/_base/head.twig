@@ -1,0 +1,37 @@
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<meta charset="utf-8">
+	<link rel="home" href="{{ craft.app.request.absoluteUrl }}">
+
+	<!-- Fonts -->
+	{# TODO: link juist zetten voor production (css moet geminified worden ook) #}
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<!-- Seo -->
+	{% include "_base/meta" %}
+
+	<!-- Viewport -->
+	<meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1">
+
+	<!-- FAVICONS -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+
+	<meta property="og:image" content="/assets/images/logo.png">
+	<meta property="og:image:type" content="image/png">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-37274169-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-37274169-1');
+	</script>
+</head>

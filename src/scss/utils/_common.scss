@@ -1,0 +1,66 @@
+// =============================================================================
+// Utils
+// =============================================================================
+
+/**
+ * Utilities file based on the usage of the @littlelmissrobot/sass-utils
+ * library. This generates utility classes based on the configuration.
+ *
+ * https://www.npmjs.com/package/@littlemissrobot/sass-utils
+ */
+
+$lmr-sass-utils: (
+	settings: (
+		misc: (
+			display: none
+		),
+		margin: (
+			all: (),
+			top: (
+				15: 1.5rem
+			),
+			right: (),
+			bottom: (
+				80: 8rem
+			),
+			left: ()
+		),
+		padding: (
+			all: (),
+			top: (
+				100: 10rem,
+			),
+			right: (),
+			bottom: (
+				100: 10rem,
+			),
+			left: ()
+		),
+		text-align: (
+			center: center,
+		)
+	),
+	breakpoints: $lmr-sass-breakpoints,
+	suffixicate: (
+		viewport-7: (
+			at: (
+				misc: (
+					display: none,
+				),
+			),
+		),
+		viewport-9: (
+			to: (
+				misc: (
+					display: none,
+				),
+			),
+		),
+	)
+);
+
+// =============================================================================
+// Definition
+// =============================================================================
+// This file generates the scss and its respective classes
+@import "@littlemissrobot/sass-utils/lib/utils";

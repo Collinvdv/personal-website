@@ -1,0 +1,19 @@
+// =============================================================================
+// Media
+// =============================================================================
+
+/**
+ * Extension for normalize.scss and acts as a reset. It always sits on top of
+ * the normalize.scss file.
+ */
+
+// Remove all animations and transitions for people that prefer not to see them
+@media (prefers-reduced-motion: reduce) {
+
+	* {
+		animation-duration: 0.01ms !important; // stylelint-disable-line declaration-no-important
+		animation-iteration-count: 1 !important; // stylelint-disable-line declaration-no-important
+		transition-duration: 0.01ms !important; // stylelint-disable-line declaration-no-important
+		scroll-behavior: auto !important; // stylelint-disable-line declaration-no-important
+	}
+}

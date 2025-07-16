@@ -1,0 +1,39 @@
+{# ========================================================================== #}
+{# Inheritance #}
+{# ========================================================================== #}
+{% extends "_base/layout" %}
+
+{# ========================================================================== #}
+{# :: Variables #}
+{# ========================================================================== #}
+
+{# ========================================================================== #}
+{# Content #}
+{# ========================================================================== #}
+{% block content %}
+
+	{# Navigation #}
+	{% include "/pages/home/_partials/navigation" %}
+
+	{# Intro #}
+	{% include "/pages/home/_partials/intro" %}
+
+	{# About #}
+	{% include "/pages/home/_partials/about" %}
+
+	{# Hire #}
+	{% include "/pages/home/_partials/hire" %}
+
+	{# Skills #}
+	{% include "/pages/home/_partials/skills" %}
+
+	{# Projects #}
+	{% include "/pages/home/_partials/projects" %}
+
+	{# Contact #}
+	{% include "/pages/home/_partials/contact" %}
+
+	{# Footer #}
+	{% include "/pages/home/_partials/footer" %}
+
+{% endblock %}

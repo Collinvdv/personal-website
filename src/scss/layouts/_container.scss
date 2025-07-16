@@ -1,0 +1,48 @@
+// =============================================================================
+// Variables
+// =============================================================================
+
+/**
+ * Container definition based on the usage of the
+ * @littlelmissrobot/sass-container library. This generates container classes
+ * based on the configuration.
+ *
+ * https://www.npmjs.com/package/@littlemissrobot/sass-container
+ */
+
+$lmr-sass-container: (
+	settings: (
+		layout: 12,
+		max-width: 120rem,
+		columns: (12),
+		widths: (),
+		with-default-spacing: (
+			viewport-0: 2rem,
+			viewport-7: 4rem
+		),
+		with-spacing: ()
+	),
+	breakpoints: $lmr-sass-breakpoints,
+	suffixicate: (
+		viewport-7: (
+			at: (
+				columns: (8)
+			)
+		),
+		viewport-9: (
+			at: (
+				columns: (6, 10)
+			)
+		)
+	)
+);
+
+// =============================================================================
+// Definition
+// =============================================================================
+// This import generates the container classes
+@import "@littlemissrobot/sass-container/lib/container";
+
+.l-container--with-default-spacing {
+	width: calc(100% - (2rem * 2));
+}

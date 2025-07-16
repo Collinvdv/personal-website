@@ -1,0 +1,185 @@
+fieldLayouts:
+  3be0146a-7e16-4e9d-9ca2-3fd8e02323c4:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 979edcfe-23fe-4453-a10b-5c5cb5b06623
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 507c095e-44f7-47d7-b1ca-dd6663d98aa0 # Home intro title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9eb95209-fcfe-4821-b6e5-47977616adfa
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 845a361e-4f16-41d2-88c9-3632a7b7d936 # Home intro subtitle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 89e9cbd3-605d-4c96-b479-20973199f684
+            userCondition: null
+            warning: null
+            width: 100
+        name: Intro
+        uid: 3fcd8f60-1518-4e00-b4b2-2750b0f4449f
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 27c528df-007f-4a09-9fd7-1c605816ac2b # Home about title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f7321033-135c-4ba8-9d4c-b9f3e2e2e237
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a075fed3-5f80-4cdc-bc8d-22d045a3eb60 # Home about desciption
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 64ea1042-c98b-48e1-a436-dd03732f8704
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bf9789d9-7284-457f-ba5d-f00f85e08a2e # Home about quote
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4d939ea8-6c8d-41a8-8952-206db2afc40a
+            userCondition: null
+            warning: null
+            width: 100
+        name: About
+        uid: 1a8c0f71-fca2-425a-9587-de5af137ce47
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 889e9633-1597-42c2-ad14-8bc1bd4cd17e # Home hire title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 67782cd1-db47-465b-8188-08b7d6ba7e02
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 98468fb3-d27f-44df-b3a2-8d899263a29e # Home hire items
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 23203575-35e8-4edc-bcb0-2c0acbf689e3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Hire
+        uid: d3908b35-c1f1-42d6-85f0-7d352b88a8b0
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d2b90f04-d625-4e7c-8942-cd4ca0291384 # Home skills title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 24becf15-5520-4a98-8697-d6f9d2601f4c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 77ff6b51-9435-45a0-bf02-1a16ac037f2a # Home skills quote
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a7cf5ae5-3add-4faf-b932-79ef0696f20a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9e9c5a41-7ebe-4d8c-aed8-8aee1ab975a4 # Home skills items
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 066d83d3-e692-4d76-9e8f-fb10579160d5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Skills
+        uid: ff39c46c-e040-45c7-bc88-f3d30ab5f279
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: d1b05498-6aa4-451c-91c3-e5f05044c6b7 # Pages
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

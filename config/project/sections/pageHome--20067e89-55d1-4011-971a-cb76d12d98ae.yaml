@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: pageHome
+name: Home
+propagationMethod: all
+siteSettings:
+  ae761614-14f4-4740-b71c-747213a4ce1e: # Collin Van der Vorst
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/home/index
+    uriFormat: __home__
+type: single

@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: b3c111d9-0a13-4069-a080-8f14d635954e # Training
+handle: trainingProgramItems
+instructions: ''
+name: 'Training program items'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_trainingprogramitems}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

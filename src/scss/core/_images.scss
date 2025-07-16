@@ -1,0 +1,38 @@
+// =============================================================================
+// Images
+// =============================================================================
+
+/**
+ * Extension for normalize.scss and acts as a reset. It always sits on top of
+ * the normalize.scss file. Logics based off:
+ *
+ * https://github.com/twbs/bootstrap/blob/master/scss/_reboot.scss
+ */
+
+/**
+ * Removes whitespace under the <img> elements when they are dropped into a page
+ * without any styling. Safer alternative than display: block;
+ */
+
+img,
+svg {
+	vertical-align: middle;
+}
+
+/**
+ * 1. Fluid images for responsiveness
+ * 2. Differentiate alt text when image is not shown from surrounding copy.
+ * 3. If a `width` and/or `height` attribute has been defined, don't make the
+ *    image fluid.
+ */
+
+img {
+	max-width: 100%; // 1
+
+	font-style: italic; // 2
+
+	&[width],
+	&[height] {
+		max-width: none; // 3
+	}
+}

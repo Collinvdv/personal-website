@@ -1,0 +1,58 @@
+// =============================================================================
+// Variables
+// =============================================================================
+
+/**
+ * Grid definition based on the usage of the @littlelmissrobot/sass-grid
+ * library. This generates grid classes based on the configuration.
+ *
+ * https://www.npmjs.com/package/@littlemissrobot/sass-grid
+ */
+
+$lmr-sass-grid: (
+	settings: (
+		layout: 12,
+		columns: (1, 2, 3, 4, 6, 7, 8, 9, 10, 12),
+		left-offsets: (),
+		right-offsets: (),
+		with-default-spacing: (
+			viewport-0: 1.6rem,
+			viewport-7: 2rem,
+			viewport-9: 3rem
+		),
+		with-spacing: (),
+		with-column-spacing: (),
+		with-row-spacing: (),
+		justify-content: (),
+		align-items: (
+			center: center,
+			stretch: stretch,
+			top: flex-start
+		),
+		align-self: (),
+		order: ()
+	),
+	breakpoints: $lmr-sass-breakpoints,
+	suffixicate: (
+		viewport-7: (
+			at: (
+				columns: (4, 5, 6, 8)
+			)
+		),
+		viewport-9: (
+			at: (
+				columns: (1, 3, 4, 5, 6, 7, 8)
+			)
+		)
+	)
+);
+
+// =============================================================================
+// Definition
+// =============================================================================
+// This import generates the grid classes
+@import "@littlemissrobot/sass-grid/lib/grid";
+
+.l-grid--with-default-spacing > [class*=l-grid__col] {
+    margin: 0.8rem;
+}

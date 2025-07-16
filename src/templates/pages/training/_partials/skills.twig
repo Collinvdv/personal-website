@@ -1,0 +1,37 @@
+<section class="l-section c-skills" id="skills">
+	<div class="l-container:12/12 l-container--with-default-spacing">
+		<div class="l-section__content">
+			<div class="l-grid l-grid--with-default-spacing">
+				<div class="l-grid__col:12/12">
+					<h2 class="c-skills__title">
+						{{ entry.homeSkillsTitle }}
+					</h2>
+				</div>
+
+				<div class="l-grid__col:12/12 l-grid__col:4/12@at:viewport-9">
+					{% include "/_components/quote" with {
+						text: entry.homeSkillsQuote
+					} %}
+				</div>
+
+				<div class="l-grid__col:12/12 l-grid__col:1/12@at:viewport-9">
+				</div>
+
+				<div class="l-grid__col:12/12 l-grid__col:7/12@at:viewport-9">
+					<div class="l-grid l-grid--with-default-spacing">
+						{% if entry.homeHireItems|length > 0 %}
+							{% for item in entry.homeSkillsItems.all() %}
+								<div class="l-grid__col:12/12 l-grid__col:6/12@at:viewport-9">
+									{% include "/_components/card" with {
+										title: item.mxTitle,
+										text: item.mxDescription,
+									} %}
+								</div>
+							{% endfor %}
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

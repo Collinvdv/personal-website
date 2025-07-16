@@ -1,0 +1,18 @@
+// =============================================================================
+// Reset list
+// =============================================================================
+
+/**
+ * Reset a list by removing the padding and list-style-type when no styling is
+ * applied to it yet.
+ *
+ * Utility can be created:
+ * u-reset-list { @include reset-list(!important); }
+ */
+
+@mixin reset-list($important: null) {
+	margin: 0 $important;
+	padding-left: 0 $important;
+
+	list-style-type: none $important;
+}

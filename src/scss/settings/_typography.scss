@@ -1,0 +1,124 @@
+// =============================================================================
+// Font families
+// =============================================================================
+$font-family-primary: ("Work Sans", "Arial", sans-serif);
+
+// =============================================================================
+// Font weights
+// =============================================================================
+// https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight
+$font-weight-extra-black: 950; // extra-black/ultra-black
+$font-weight-black: 900; // black/heavy
+$font-weight-extra-bold: 800; // extra-bold/ultra-bold
+$font-weight-bold: 700;
+$font-weight-semi-bold: 600; // semi-bold/demi-bold
+$font-weight-medium: 500;
+$font-weight-normal: 400; // normal/regular
+$font-weight-light: 300;
+$font-weight-extra-light: 200; // extra-light/ultra-light
+$font-weight-thin: 100; // thin/hairline
+
+// =============================================================================
+// Line heights constants
+// =============================================================================
+$line-height-default: 1.5;
+$line-height-normalize: 1;
+
+// =============================================================================
+// Font styles
+// =============================================================================
+
+/**
+ * Font styles used within all the styles. Define all typography here.
+ *
+ * https://www.npmjs.com/package/@littlemissrobot/sass-typography
+ */
+
+$lmr-sass-typography: (
+	source: (
+		h1: (
+			font-family: $font-family-primary,
+			font-weight: $font-weight-thin,
+			font-size: 48px,
+			line-height: 1,
+			viewport-7: (
+				font-size: 64px,
+				line-height: 1.2,
+			),
+			viewport-9: (
+				font-size: 92px,
+				line-height: 1.2,
+			)
+		),
+		h2: (
+			font-family: $font-family-primary,
+			font-weight: $font-weight-bold,
+			font-size: 44px,
+			line-height: 1,
+			viewport-7: (
+				font-size: 64px,
+				line-height: 1,
+			),
+			viewport-9: (
+				font-size: 64px,
+				line-height: 1,
+			)
+		),
+		h3: (
+			font-family: $font-family-primary,
+			font-weight: $font-weight-bold,
+			font-size: 28px,
+			line-height: 1.2,
+			viewport-7: (
+				font-size: 32px,
+				line-height: 1.2,
+			),
+		),
+		h4: (
+			font-family: $font-family-primary,
+			font-weight: $font-weight-bold,
+			font-size: 18px,
+			line-height: 1.2,
+		),
+		h5: (),
+		h6: (
+			font-family: $font-family-primary,
+			font-weight: $font-weight-light,
+			font-size: 18px,
+			line-height: 1.2,
+		),
+		paragraph: (
+			font-family: $font-family-primary,
+			font-weight: $font-weight-normal,
+			font-size: 16px,
+			line-height: 1.5
+		),
+		button: (
+			font-family: $font-family-primary,
+			font-weight: $font-weight-semi-bold,
+			font-size: 16px
+		),
+		number: (
+			font-family: $font-family-primary,
+			font-weight: $font-weight-bold,
+			font-size: 16px,
+			line-height: 1.5,
+		),
+		label: (
+			font-family: $font-family-primary,
+			font-weight: $font-weight-semi-bold,
+			font-size: 18px,
+			line-height: 1.5,
+		),
+		quote: (
+			font-family: $font-family-primary,
+			font-weight: $font-weight-light,
+			font-size: 26px,
+			line-height: 1.2,
+			viewport-7: (
+				font-size: 32px,
+				line-height: 1.5,
+			),
+		)
+	)
+);

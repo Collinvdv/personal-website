@@ -1,0 +1,23 @@
+columnSuffix: null
+contentColumnType: text
+fieldGroup: b3c111d9-0a13-4069-a080-8f14d635954e # Training
+handle: trainingIntroDescription
+instructions: ''
+name: 'Training intro description'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  defaultTransform: ''
+  initJs: null
+  purifierConfig: ''
+  purifyHtml: '1'
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showUnpermittedFiles: ''
+  showUnpermittedVolumes: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

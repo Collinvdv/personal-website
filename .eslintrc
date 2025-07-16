@@ -1,0 +1,11 @@
+{
+	"extends": [
+		"@littlemissrobot/eslint-config",
+		"@littlemissrobot/eslint-config/linters/es6"
+	],
+	"parser": "babel-eslint",
+	"globals": {
+		"ScrollMagic": true,
+		"gsap": true
+	}
+}

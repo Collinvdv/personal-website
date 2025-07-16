@@ -1,0 +1,29 @@
+// =============================================================================
+// Root
+// =============================================================================
+.c-hire {
+	position: relative;
+}
+
+// =============================================================================
+// Elements
+// =============================================================================
+.c-hire__title {
+	margin-bottom: 4rem;
+}
+
+.c-hire__orange {
+	width: 100%;
+    height: calc(100% + 8rem);
+    position: absolute;
+    top: -4rem;
+    left: 0;
+    z-index: -1;
+    transform: translateX(-15%);
+
+	background-color: $nude;
+
+	@include respond-at("viewport-9") {
+		transform: translateX(-25%);
+	}
+}

@@ -1,0 +1,77 @@
+// =============================================================================
+// Root
+// =============================================================================
+.c-projects {
+	position: relative;
+
+	color: $white;
+}
+
+// =============================================================================
+// Elements
+// =============================================================================
+.c-projects__title {
+	padding-bottom: 0;
+
+	@include respond-at("viewport-9") {
+		padding-bottom: 4rem;
+	}
+}
+
+.c-projects__subtitle {
+	@include respond-at("viewport-9") {
+		border-bottom: 1px solid $white;
+		text-align: right;
+	}
+}
+
+.c-projects__black {
+	width: 100%;
+    height: calc(100% + 2rem);
+    position: absolute;
+    top: -4rem;
+    left: 0;
+    z-index: -1;
+    transform: translateX(-10%);
+
+	background-color: $black;
+
+	@include respond-at("viewport-9") {
+		transform: translateX(-40%);
+	}
+}
+
+.c-projects__item {
+	color: $black;
+
+	&:not(:last-child) {
+		margin-bottom: 6rem;
+	}
+}
+
+.c-projects__item-title {
+	margin-bottom: 1.5rem;
+}
+
+.c-projects__overview {
+	padding: 5rem 3rem;
+
+	background-color: $white;
+
+	&:not(:last-child) {
+		margin-bottom: 6rem;
+	}
+
+	@include respond-at("viewport-9") {
+		padding: 6rem 5rem;
+	}
+}
+
+.c-projects__item-content {
+	margin-bottom: 1rem;
+
+	a {
+		color: $black;
+		margin-right: 0.5rem;
+	}
+}

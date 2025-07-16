@@ -1,0 +1,47 @@
+<section class="l-section l-section--big c-contact" id="contact">
+	<div class="l-container:12/12 l-container--with-default-spacing">
+		<div class="l-section__content">
+			<div class="l-grid">
+				<div class="l-grid__col:12/12">
+					<h2 class="c-contact__title">
+						Contact
+					</h2>
+				</div>
+
+				<div class="l-grid__col:12/12 l-grid__col:4/12@at:viewport-9">
+				</div>
+
+				<div class="l-grid__col:12/12 l-grid__col:8/12@at:viewport-9">
+					<div class="l-grid l-grid--with-default-spacing">
+						<div class="l-grid__col:12/12 l-grid__col:6/12@at:viewport-9">
+							{% include "/_components/card" with {
+								class: "c-card--black",
+								title: "Mail mij",
+								text: "Interesse om samen te werken? <br/> Mail me en we bekijken hoe we elkaar kunnen helpen. ",
+								linkUrl: "mailto:info@collinvandervorst.be",
+								linkClass: "c-link--white",
+								linkText: "info@collinvandervorst.be",
+								icon: "messages"
+							} %}
+						</div>
+
+						<div class="l-grid__col:12/12 l-grid__col:6/12@at:viewport-9">
+							{% include "/_components/card" with {
+								class: "c-card--black",
+								title: "Bel mij",
+								text: "Liever mondeling overleg? <br/> Bel me dan maar gerust eens op!",
+								linkUrl: "tel:+324673884628",
+								linkClass: "c-link--white",
+								linkText: "0473/88.46.28",
+								icon: "phone"
+							} %}
+						</div>
+					</div>
+				</div>
+
+				<div class="c-hire__orange">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

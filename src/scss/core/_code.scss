@@ -1,0 +1,45 @@
+// =============================================================================
+// Code
+// =============================================================================
+
+/**
+ * Extension for normalize.scss and acts as a reset. It always sits on top of
+ * the normalize.scss file. Logics based off:
+ *
+ * https://github.com/twbs/bootstrap/blob/master/scss/_reboot.scss
+ */
+
+/**
+ * 1. Don't allow content to break outside
+ * 2. Disable auto-hiding scrollbar in legacy Edge to avoid overlap, making it
+ *    impossible to interact with the content
+ */
+
+pre {
+	display: block;
+	overflow: auto; // 1
+	-ms-overflow-style: scrollbar; // 2
+
+	// Take into account some code outputs that place code tags in pre tags
+	code {
+		word-break: normal;
+
+		color: inherit;
+	}
+}
+
+code {
+	word-wrap: break-word;
+
+	// Streamline style when inside anchors to avoid broken underline and more
+	a > & {
+		color: inherit;
+	}
+}
+
+kbd {
+
+	kbd {
+		padding: 0;
+	}
+}

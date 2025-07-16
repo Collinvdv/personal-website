@@ -1,0 +1,35 @@
+columnSuffix: null
+contentColumnType: text
+fieldGroup: 5fd5dfe6-4684-4ec8-b94b-0aaae1d9b339 # Home
+handle: commonSeo
+instructions: ''
+name: 'Seo description'
+searchable: false
+settings:
+  description: ''
+  hideSocial: ''
+  robots:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  socialImage: ''
+  suffixAsPrefix: null
+  title:
+    -
+      __assoc__:
+        -
+          - key
+          - '2'
+        -
+          - locked
+          - '1'
+        -
+          - template
+          - 'Webdeveloper - {{ siteName }}'
+  titleSuffix: null
+translationKeyFormat: null
+translationMethod: none
+type: ether\seo\fields\SeoField

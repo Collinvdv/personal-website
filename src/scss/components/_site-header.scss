@@ -1,0 +1,92 @@
+// =============================================================================
+// Root
+// =============================================================================
+.c-site-header {
+	display: none;
+	padding: 2.5rem 0;
+	position: relative;
+
+	@include respond-at("viewport-7") {
+		display: block;
+		padding: 4rem 0;
+	}
+}
+
+// =============================================================================
+// Elements
+// =============================================================================
+.c-site-header__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.c-site-header__logo {
+	margin-right: 6rem;
+}
+
+.c-site-header__image {
+	width: 16rem;
+	height: auto;
+}
+
+.c-site-header__nav {
+	@include reset-list();
+
+	display: none;
+
+	@include respond-at("viewport-7") {
+		display: flex;
+	}
+}
+
+.c-site-header__nav-item {
+	margin-right: 5rem;
+}
+
+.c-site-header__nav-link {
+	@include set-typo("h6");
+
+	text-decoration: none;
+
+	color: $black;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.c-site-header__orange {
+	width: 100%;
+    height: calc(100% + 8rem);
+    position: absolute;
+    top: -4rem;
+    left: 0;
+    z-index: -1;
+    transform: translateX(-15%);
+
+	background-color: $nude;
+
+	@include respond-at("viewport-9") {
+		transform: translateX(-25%);
+	}
+}
+
+.c-site-header__title {
+	margin-top: 2rem;
+	margin-bottom: 4rem;
+
+	@include set-typo("h2");
+}
+
+.c-site-header__icon {
+	width: 50px;
+	margin-top: 3.5rem;
+	margin-bottom: 1rem;
+}
+
+.c-site-header__link {
+	display: inline-block;
+
+	margin-top: 2rem;
+}

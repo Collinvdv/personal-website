@@ -1,0 +1,35 @@
+<section class="l-section l-section--small c-intro">
+	<div class="l-container:12/12 l-container--with-default-spacing">
+		<div class="l-section__content">
+			<div class="l-grid l-grid--with-default-spacing c-intro__content">
+				<div class="l-grid__col:1/12">
+				</div>
+
+				<div class="l-grid__col:12/12 l-grid__col:5/12@at:viewport-7 c-intro__content-image">
+					<div class="c-intro__blue">
+					</div>
+
+					<picture class="c-intro__image">
+						<source type="image/webp" srcset="/assets/images/collin.webp" />
+						<img src="/assets/images/collin.png" alt="Afbeelding van Collin Van der Vorst" rel="preload"/>
+					</picture>
+				</div>
+
+				<div class="l-grid__col:12/12 l-grid__col:5/12@at:viewport-7  c-intro__content-text">
+					<h1 class="c-intro__title">
+						{{ entry.homeIntroTitle | nl2br }}
+					</h1>
+
+					<h3 class="c-intro__subtitle">
+						{{ entry.homeIntroSubtitle | nl2br }}
+					</h3>
+
+					{% include "/_components/link" with {
+						text: "Boek een AI-sessie",
+						url: "/#contact",
+						icon: "messages"
+					} %}
+				</div>
+		</div>
+	</div>
+</section>

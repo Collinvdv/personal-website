@@ -1,0 +1,39 @@
+<section class="l-section c-hire" id="hire">
+	<div class="l-container:12/12 l-container--with-default-spacing">
+		<div class="l-section__content">
+			<div class="l-grid">
+				<div class="l-grid__col:12/12">
+					<h2 class="c-hire__title">
+						{{ entry.homeHireTitle | nl2br }}
+					</h2>
+				</div>
+
+				<div class="l-grid__col:12/12 l-grid__col:4/12@at:viewport-9">
+				</div>
+
+				<div class="l-grid__col:12/12 l-grid__col:8/12@at:viewport-9">
+					<div class="l-grid l-grid--with-default-spacing">
+						{% if entry.homeHireItems|length > 0 %}
+							{% for item in entry.homeHireItems.all() %}
+								<div class="l-grid__col:12/12 l-grid__col:6/12@at:viewport-9">
+									{% include "/_components/card" with {
+										class: "c-card--black",
+										title: item.mxTitle,
+										text: item.mxDescription,
+										linkUrl: "/#contact",
+										linkClass: "c-link--white",
+										linkText: "Contacteer me",
+										icon: "messages"
+									} %}
+								</div>
+							{% endfor %}
+						{% endif %}
+					</div>
+				</div>
+
+				<div class="c-hire__orange">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

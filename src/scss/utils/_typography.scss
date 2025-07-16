@@ -1,0 +1,22 @@
+// =============================================================================
+// Typography
+// =============================================================================
+/**
+ * Typography utility generator based on the usage of the
+ * @littlelmissrobot/sass-typography library. This makes use of the font-styles
+ * configuration defined within $lmr-sass-typography.
+ *
+ * https://www.npmjs.com/package/@littlemissrobot/sass-typography
+ */
+
+$lmr-sass-typography: (
+	source: map-get($lmr-sass-typography, source),
+	breakpoints: $lmr-sass-breakpoints,
+	utils: ()
+);
+
+// =============================================================================
+// Definition
+// =============================================================================
+// This import generates the typography utility classes
+@import "@littlemissrobot/sass-typography/lib/utils";

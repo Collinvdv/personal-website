@@ -1,0 +1,202 @@
+fieldLayouts:
+  0930ee79-4088-4885-8594-88455cdbe0ad:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 507c095e-44f7-47d7-b1ca-dd6663d98aa0 # Home intro title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 845a361e-4f16-41d2-88c9-3632a7b7d936 # Home intro subtitle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            warning: null
+            width: 100
+        name: Intro
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 27c528df-007f-4a09-9fd7-1c605816ac2b # Home about title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a075fed3-5f80-4cdc-bc8d-22d045a3eb60 # Home about desciption
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: bf9789d9-7284-457f-ba5d-f00f85e08a2e # Home about quote
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: About
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 889e9633-1597-42c2-ad14-8bc1bd4cd17e # Home hire title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 98468fb3-d27f-44df-b3a2-8d899263a29e # Home hire items
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Hire
+        sortOrder: 3
+      -
+        elements:
+          -
+            fieldUid: d2b90f04-d625-4e7c-8942-cd4ca0291384 # Home skills title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9e9c5a41-7ebe-4d8c-aed8-8aee1ab975a4 # Home skills items
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 77ff6b51-9435-45a0-bf02-1a16ac037f2a # Home skills quote
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Skills
+        sortOrder: 4
+      -
+        elements:
+          -
+            fieldUid: afdb79ef-b52e-4f7d-aca6-2e52c045d968 # Home projects title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ab2a992b-c13e-4b79-b232-dbd8487f5768 # Home projects subtitle 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: fa7a85ab-edde-42f9-b828-74b098ec2371 # Home projects items 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ef1963e4-c282-49c5-94da-272a297968c4 # Home projects subtitle 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f28056ab-fb6b-491d-a750-70938b172d12 # Home projects items 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Projects
+        sortOrder: 5
+      -
+        elements:
+          -
+            fieldUid: f160e6f9-051f-46a8-ad71-d037bcbd3eb2 # Seo description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Seo
+        sortOrder: 6
+handle: pageHome
+hasTitleField: false
+name: Home
+section: 20067e89-55d1-4011-971a-cb76d12d98ae # Home
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

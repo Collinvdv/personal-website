@@ -1,0 +1,38 @@
+fieldLayouts:
+  a8b77a95-294f-4c2c-bbfa-68e4a13da79b:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fs: imagesAssets
+handle: imagesAssets
+hasUrls: true
+name: 'Images assets'
+sortOrder: 0
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+url: '@assetsBaseUrl/images'

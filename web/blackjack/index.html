@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .cards {
+                display: flex;
+                margin-bottom: 20px;
+            }
+            .card {
+                border: 2px solid rebeccapurple;
+                color: rebeccapurple;
+                padding: 40px 40px;
+                font-size: 24px;
+                margin-right: 20px;
+                border-radius: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            Blackjack
+        </h1>
+
+        <p>
+            Player should have at least 16, before they can stop
+        </p>
+
+        <div class="game js-game">
+            <!-- Player cards -->
+            <h2>Player 1: total <span class="js-player-total">0</span></h2>
+            <div class="cards js-player-cards">
+            </div>
+    
+            <!-- Buttons -->
+            <div class="js-buttons">
+                <button class="js-button-add">
+                    Ask new card
+                </button>
+                <button class="js-button-stop" disabled>
+                    Stop
+                </button>
+            </div>
+
+            <!-- Computer cards -->
+            <h2>Computer: total <span class="js-computer-total">0</span></h2>
+            <div class="cards js-computer-cards">
+            </div>
+        </div>
+
+
+        <script>
+            var userScore = 0;
+            var computerScore = 0;
+
+            // Add random card on click button
+            document.querySelector(".js-button-add").addEventListener("click", function() {
+                // pick random card
+                var randomCard = Math.ceil(13 * Math.random());
+
+                // add card
+                var cardEl = document.createElement("div");
+                cardEl.classList.add("card");
+                cardEl.innerHTML = randomCard;
+                document.querySelector(".js-player-cards").appendChild(cardEl);
+
+                // add to total
+                userScore += randomCard;
+                document.querySelector(".js-player-total").innerHTML = userScore;
+
+                // Check if heigher than 16 in order to stop
+                if (userScore >= 16) document.querySelector(".js-button-stop").removeAttribute("disabled");
+                if (userScore > 21) {
+                    setTimeout(function() {
+                        document.querySelector(".js-game").innerHTML = "Game over, heigher than 21, computer wins";
+                    }, 1000);
+                }
+            });
+
+            // Stop 
+            document.querySelector(".js-button-stop").addEventListener("click", function() {
+                var pickNewCard = setInterval(function() {
+                    // pick random card
+                    var randomCard = Math.ceil(13 * Math.random());
+
+                    // add card
+                    var cardEl = document.createElement("div");
+                    cardEl.classList.add("card");
+                    cardEl.innerHTML = randomCard;
+                    document.querySelector(".js-computer-cards").appendChild(cardEl);
+
+                    // add to total
+                    computerScore += randomCard;
+                    document.querySelector(".js-computer-total").innerHTML = computerScore;
+
+                    if (computerScore > 21) {
+                        
+                        clearInterval(pickNewCard);
+
+                        setTimeout(function() {
+                            document.querySelector(".js-game").innerHTML = "Game over, heigher than 21, user wins"
+                        }, 1000)
+
+                        return;
+                    }
+
+                    if (computerScore == 21) {
+                        checkWinner();
+                        clearInterval(pickNewCard);
+                        return;
+                    }
+
+                    if (computerScore > 16) {
+                        var randomChoice = Math.random();
+
+                        if (randomChoice > 0.5) {
+                            checkWinner();
+                            clearInterval(pickNewCard);
+                        }
+                    }
+                }, 1000);
+            });
+
+            function checkWinner() {
+                setTimeout(function() {
+                    var score = "Computer has " + computerScore + "points, User has" + userScore + " points <br/>";
+                    if (computerScore >= userScore) {
+                        document.querySelector(".js-game").innerHTML = score + "computer wins"
+                    }
+    
+                    if (computerScore < userScore) {
+                        document.querySelector(".js-game").innerHTML = score + "user wins"
+                    }
+    
+                    if (computerScore == userScore) {
+                        document.querySelector(".js-game").innerHTML = score + "draw"
+                    }
+                }, 1000)
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+// =============================================================================
+// Z-index
+// =============================================================================
+
+/**
+ * The z-indexes are contextually based on the different layers within a site.
+ * If a custom z-index is applied, it is based upon one of the items by adding
+ * (+) or subtracting (-) a number.
+ */
+
+$z-index-foreground: 9999;
+$z-index-modal: 9000;
+$z-index-overlay: 8000;
+$z-index-dropdown: 7000;
+$z-index-header: 6000;
+$z-index-nav: 5000;
+$z-index-footer: 4000;
+$z-index-base: 10;
+$z-index-background: -1;

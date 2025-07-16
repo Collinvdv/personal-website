@@ -1,0 +1,3 @@
+Place any JS Globals that multiple modules should know about in here.
+
+Remove this file when you start filling up this folder...

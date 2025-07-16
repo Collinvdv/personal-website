@@ -1,0 +1,39 @@
+// =============================================================================
+// Root
+// =============================================================================
+.c-footer {
+	display: inline-flex;
+	width: 100%;
+	justify-content: space-between;
+	padding-top: 2rem;
+	margin-top: 4rem;
+
+	border-top: 1px solid $black;
+	flex-direction: column;
+
+	@include respond-at("viewport-12") {
+		flex-direction: row;
+	}
+}
+
+// =============================================================================
+// Elements
+// =============================================================================
+.c-footer__list {
+	display: flex;
+	list-style: none;
+	flex-direction: column;
+
+	@include respond-at("viewport-7") {
+		flex-direction: row;
+
+		li:not(:last-child) {
+			&:after {
+				content: "|";
+
+				position: relative;
+				margin: 0 1rem;
+			}
+		}
+	}
+}

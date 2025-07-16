@@ -1,0 +1,67 @@
+// =============================================================================
+// Root
+// =============================================================================
+
+// =============================================================================
+// Elements
+// =============================================================================
+.c-intro {
+	position: relative;
+}
+
+.c-intro__title {
+	margin-bottom: 2rem;
+	position: relative;
+
+	@include respond-at("viewport-9") {
+		left: -10rem;
+	}
+}
+
+.c-intro__content {
+	@include respond-to("viewport-7") {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+}
+
+.c-intro__content-text {
+	@include respond-to("viewport-7") {
+		order: 1;
+	}
+}
+
+.c-intro__content-image {
+	@include respond-to("viewport-7") {
+		order: 2;
+	}
+}
+
+.c-intro__subtitle {
+	margin-bottom: 2rem;
+}
+
+.c-intro__blue {
+	width: 100%;
+    height: calc(100% + 8rem);
+    position: absolute;
+    top: -4rem;
+    left: 0;
+    z-index: -1;
+    transform: translateX(-55%);
+
+	@include respond-at("viewport-7") {
+		background-color: $black;
+	}
+}
+
+.c-intro__image {
+	@include respond-to("viewport-7") {
+		transform: translateY(-30px);
+		width: 50%;
+    	float: right;
+		z-index: -1;
+		position: relative;
+		margin-top: -75px;
+	}
+}

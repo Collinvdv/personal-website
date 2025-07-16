@@ -1,0 +1,30 @@
+// =============================================================================
+// Visually hidden
+// =============================================================================
+
+/**
+ * Quickly hide an element offscreen, to keep its functionality and standard
+ * browser behaviour, but do not compromise the accessibility of the users.
+ * Display: none; is not used because off this reason. ONLY USE THIS FOR
+ * ACCESSIBILITY REASONS.
+ *
+ * Utility can be created:
+ * u-visually-hidden { @include visually-hidden(!important); }
+ */
+
+@mixin visually-hidden($important: null) {
+	position: absolute $important;
+
+	clip: rect(0 0 0 0) $important;
+	clip-path: inset(50%) $important;
+
+	width: 0.1rem $important;
+	height: 0.1rem $important;
+	overflow: hidden $important;
+	margin: -0.1rem $important;
+	padding: 0 $important;
+
+	white-space: nowrap $important;
+
+	border: 0 $important;
+}

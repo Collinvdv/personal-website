@@ -1,0 +1,23 @@
+// =============================================================================
+// Grouping
+// =============================================================================
+
+/**
+ * Extension for normalize.scss and acts as a reset. It always sits on top of
+ * the normalize.scss file. Logics based off:
+ *
+ * https://github.com/twbs/bootstrap/blob/master/scss/_reboot.scss
+ */
+
+hr {
+	background-color: currentColor;
+	border: 0;
+
+	&:not([size]) {
+		/**
+		 * Set correct height and prevent the `size` attribute to make the `hr` look
+ 		 * like an input field.
+		 */
+		height: 1px; // stylelint-disable-line declaration-property-unit-whitelist
+	}
+}

@@ -1,0 +1,146 @@
+field: f28056ab-fb6b-491d-a750-70938b172d12 # Home projects items 2
+fieldLayouts:
+  82780818-b7d8-41a3-89b2-4ff1aa0e8cbd:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a7890ae9-a63e-450e-ac47-e107fc2b2874 # Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 33291373-c57d-419c-9d2f-1de92f6c06db
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 66ba4790-4e8a-4d63-9447-aa10519ea3d0 # Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 64d18c84-0575-4ce5-bc5a-354da5ecd615
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d675a71a-e2dd-4100-9f66-d4ff3c636968 # Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e73b0b12-9d4e-4e1f-a025-8c63566ebf71
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f1c1c2e8-74dc-4e9d-88ca-64919232d7e9 # Link text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a148c947-4458-4390-84f8-6ce167f22fd6
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 0eca9ffb-9152-4517-a7c6-c146aae8c229
+        userCondition: null
+fields:
+  66ba4790-4e8a-4d63-9447-aa10519ea3d0: # Description
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: mxDescription
+    instructions: null
+    name: Description
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      defaultTransform: null
+      initJs: null
+      purifierConfig: null
+      purifyHtml: true
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\ckeditor\Field
+  a7890ae9-a63e-450e-ac47-e107fc2b2874: # Title
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: mxTitle
+    instructions: null
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d675a71a-e2dd-4100-9f66-d4ff3c636968: # Link
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: mxLink
+    instructions: null
+    name: Link
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  f1c1c2e8-74dc-4e9d-88ca-64919232d7e9: # Link text
+    columnSuffix: txnfphdi
+    contentColumnType: text
+    fieldGroup: null
+    handle: mxLinkText
+    instructions: null
+    name: 'Link text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: projectblock
+name: ProjectBlock
+sortOrder: 1

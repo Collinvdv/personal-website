@@ -1,0 +1,21 @@
+// =============================================================================
+// Clear fix
+// =============================================================================
+
+/**
+ * Used in float layouts where elements are floated to be stacked horizontally.
+ * Allows a container to wrap its floated children.
+ *
+ * Utility can be created:
+ * u-clearfix { @include clearfix(!important); }
+ */
+
+@mixin clearfix($important: null) {
+
+	&::after {
+		content: "" $important;
+
+		display: block $important;
+		clear: both $important;
+	}
+}

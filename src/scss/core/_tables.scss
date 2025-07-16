@@ -1,0 +1,49 @@
+// =============================================================================
+// Tables
+// =============================================================================
+
+/**
+ * Extension for normalize.scss and acts as a reset. It always sits on top of
+ * the normalize.scss file. Logics based off:
+ *
+ * https://github.com/twbs/bootstrap/blob/master/scss/_reboot.scss
+ */
+
+/**
+ * 1. Prevent double borders
+ * 2. Remove default table styling
+ * 3. Ensure tables fill up as much space of their respective containers.
+ */
+
+table {
+	width: 100%; // 3
+
+	caption-side: bottom; // 1
+	border-collapse: collapse; // 1, 2
+	border-spacing: 0; // 2
+}
+
+caption {
+	text-align: left;
+}
+
+/**
+ * 1. Matches default `<td>` alignment by inheriting `text-align`.
+ * 2. Fix alignment for Safari
+ */
+
+th {
+	text-align: inherit; // 1
+	text-align: -webkit-match-parent; // 2
+}
+
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+	border-color: inherit;
+	border-style: solid;
+	border-width: 0;
+}

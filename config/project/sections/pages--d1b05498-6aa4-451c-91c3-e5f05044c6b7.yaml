@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: pages
+name: Pages
+propagationMethod: all
+siteSettings:
+  ae761614-14f4-4740-b71c-747213a4ce1e: # Collin Van der Vorst
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/training/index.twig
+    uriFormat: 'pages/{slug}'
+type: channel

@@ -1,0 +1,33 @@
+// =============================================================================
+// Root
+// =============================================================================
+
+// =============================================================================
+// Elements
+// =============================================================================
+.c-training {
+	margin-top: 8rem;
+	margin-bottom: 8rem;
+
+	@include respond-at("viewport-7") {
+		margin-top: 12rem;
+		margin-bottom: 12rem;
+	}
+
+	@include respond-at("viewport-9") {
+		margin-top: 16rem;
+		margin-bottom: 16rem;
+	}
+}
+
+.c-training__content {
+	margin-top: 4rem;
+
+	@include respond-at("viewport-9") {
+		padding-left: 4rem;
+	}
+}
+
+.c-training__content-part2 {
+	margin-top: 8rem;
+}
