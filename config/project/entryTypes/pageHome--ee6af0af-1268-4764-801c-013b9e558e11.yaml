@@ -276,6 +276,6 @@ showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
 sortOrder: 1
-titleFormat: '{section.name|raw}'
+titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
