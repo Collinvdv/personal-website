@@ -1,0 +1,14 @@
+columnSuffix: fgrgrboh
+contentColumnType: boolean
+fieldGroup: b3c111d9-0a13-4069-a080-8f14d635954e # Training
+handle: trainingshowreviews
+instructions: null
+name: trainingShowReviews
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

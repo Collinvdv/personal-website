@@ -6634,6 +6634,144 @@ body.has-banner {
   }
 }
 
+.c-reviews {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+@media screen and (min-width: 721px) {
+  .c-reviews {
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .c-reviews {
+    margin-top: 16rem;
+    margin-bottom: 16rem;
+  }
+}
+
+.c-reviews__title {
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #24228B;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 721px) {
+  .c-reviews__title {
+    font-size: 3rem;
+    margin-bottom: 6rem;
+  }
+}
+
+.c-reviews__card {
+  background-color: #FFFFFF;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.c-reviews__card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 721px) {
+  .c-reviews__card {
+    padding: 2.5rem;
+  }
+}
+
+.c-reviews__stars {
+  color: #FFC107;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.c-reviews__text {
+  flex-grow: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333333;
+  margin-bottom: 2rem;
+  font-style: italic;
+  position: relative;
+}
+
+.c-reviews__text::before {
+  content: '"';
+  position: absolute;
+  left: -0.5rem;
+  top: -0.25rem;
+  font-size: 2rem;
+  color: #24228B;
+  font-family: Georgia, serif;
+  opacity: 0.5;
+}
+
+.c-reviews__text::after {
+  content: '"';
+  position: relative;
+  font-size: 2rem;
+  color: #24228B;
+  font-family: Georgia, serif;
+  opacity: 0.5;
+  margin-left: 0.25rem;
+  vertical-align: top;
+}
+
+@media screen and (min-width: 721px) {
+  .c-reviews__text {
+    font-size: 1.1rem;
+  }
+}
+
+.c-reviews__author {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid #DBDBDB;
+}
+
+.c-reviews__author strong {
+  color: #24228B;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.c-reviews__author span {
+  color: #74747B;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+@media screen and (min-width: 993px) {
+  .c-reviews__card:nth-child(3n+1) {
+    transform: translateY(-1rem);
+  }
+
+  .c-reviews__card:nth-child(3n+3) {
+    transform: translateY(1rem);
+  }
+
+  .c-reviews__card:hover:nth-child(3n+1) {
+    transform: translateY(-1.125rem);
+  }
+
+  .c-reviews__card:hover:nth-child(3n+3) {
+    transform: translateY(0.875rem);
+  }
+}
+
 .c-site-header {
   display: none;
   padding: 2.5rem 0;

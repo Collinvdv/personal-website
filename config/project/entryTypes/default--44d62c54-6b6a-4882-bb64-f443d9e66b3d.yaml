@@ -172,6 +172,24 @@ fieldLayouts:
         name: Skills
         uid: ff39c46c-e040-45c7-bc88-f3d30ab5f279
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: b4d17a57-3144-4b6a-bbed-7f88c637f493 # trainingShowReviews
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b2df3ccd-e56b-4878-add6-6b0baac8da43
+            userCondition: null
+            warning: null
+            width: 100
+        name: Testimonials
+        uid: 0928413e-1bbe-48ad-8f8a-d4f7b2576e59
+        userCondition: null
 handle: default
 hasTitleField: true
 name: Default

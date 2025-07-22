@@ -27,6 +27,11 @@
 	{# Skills #}
 	{% include "/pages/training/_partials/skills" %}
 
+	{# Reviews #}
+	{% if entry.trainingshowreviews %}
+		{% include "/pages/training/_partials/reviews" %}
+	{% endif %}
+
 	{# Contact #}
 	{% include "/pages/training/_partials/contact" %}
 
