@@ -8,5 +8,5 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: pages/training/index.twig
-    uriFormat: 'pages/{slug}'
+    uriFormat: '{slug}'
 type: channel
