@@ -35,3 +35,21 @@
 		color: $white;
 	}
 }
+
+.c-card--navy {
+	background-color: $navy;
+	color: $white;
+
+	.c-link {
+		color: $white;
+	}
+}
+
+.c-card--nude {
+	background-color: $nude;
+	color: $black;
+
+	.c-link {
+		color: $black;
+	}
+}

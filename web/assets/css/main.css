@@ -6277,6 +6277,24 @@ blockquote {
   color: #FFFFFF;
 }
 
+.c-card--navy {
+  background-color: #24228B;
+  color: #FFFFFF;
+}
+
+.c-card--navy .c-link {
+  color: #FFFFFF;
+}
+
+.c-card--nude {
+  background-color: #FFEBE0;
+  color: #333333;
+}
+
+.c-card--nude .c-link {
+  color: #333333;
+}
+
 .c-contact {
   position: relative;
 }
@@ -6679,8 +6697,8 @@ blockquote {
 }
 
 .c-training {
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 @media screen and (min-width: 721px) {
@@ -6694,6 +6712,12 @@ blockquote {
   .c-training {
     margin-top: 16rem;
     margin-bottom: 16rem;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .c-training__title {
+    padding-bottom: 4rem;
   }
 }
 

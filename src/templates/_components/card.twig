@@ -3,6 +3,7 @@
 {# ========================================================================== #}
 {% set class = class ?? "" %}
 {% set title = title ?? "" %}
+{% set subtitle = subtitle ?? "" %}
 {% set text = text ?? "" %}
 {% set linkUrl = linkUrl ?? "" %}
 {% set linkClass = linkClass ?? "" %}
@@ -16,16 +17,22 @@
 		{{ title }}
 	</h3>
 
+	{% if subtitle %}
+		<h4>
+			{{ subtitle }}
+		</h4>
+	{% endif %}
+
 	<div class="c-card__text">
 		{{ text|raw }}
 	</div>
 
-	{# {% if linkUrl %}
+	{% if linkUrl %}
 		{% include "/_components/link" with {
 			text: linkText,
 			url: linkUrl,
 			classes: linkClass
 		} %}
-	{% endif %} #}
+	{% endif %}
 </div>
 

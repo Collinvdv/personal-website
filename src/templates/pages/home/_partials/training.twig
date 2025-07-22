@@ -1,0 +1,56 @@
+<section class="l-section c-training" id="training">
+	<div class="l-container:12/12 l-container--with-default-spacing">
+		<div class="l-section__content">
+			<div class="l-grid l-grid--with-default-spacing">
+				<div class="l-grid__col:12/12">
+					<h2 class="c-training__title">
+						AI Training Sessies
+					</h2>
+				</div>
+
+				<div class="l-grid__col:12/12 l-grid__col:4/12@at:viewport-9">
+					{% include "/_components/quote" with {
+						text: "Praktische AI-trainingen voor wie vooruit wil."
+					} %}
+				</div>
+
+				<div class="l-grid__col:12/12 l-grid__col:1/12@at:viewport-9">
+				</div>
+
+				<div class="l-grid__col:12/12 l-grid__col:7/12@at:viewport-9">
+					<div class="l-grid l-grid--with-default-spacing">
+						{# Training for schools #}
+						<div class="l-grid__col:12/12 l-grid__col:6/12@at:viewport-9">
+							{% include "/_components/card" with {
+								class: "c-card--nude",
+								title: "Voor Scholen",
+								subtitle: "Slimmer werken met AI.",
+								text: "Interactieve workshops op maat van het onderwijs. Focus op het secundair, maar ook al succesvol getest in lagere scholen. Met heldere demo’s, concrete tools en tips die je meteen kan toepassen in de klas.",
+								linkUrl: "/ai-voor-scholen",
+								linkClass: "c-link--black",
+								linkText: "Meer info",
+								icon: "arrow_up_right"
+							} %}
+						</div>
+
+						{# Training for companies #}
+						<div class="l-grid__col:12/12 l-grid__col:6/12@at:viewport-9">
+							{% include "/_components/card" with {
+								class: "c-card--nude",
+								title: "Voor Bedrijven",
+								subtitle: "Voor leerkrachten die mee willen zijn.",
+								text: "Praktische trainingen en maatwerkoplossingen voor teams. Leer hoe je AI inzet om processen te versnellen, repetitieve taken te automatiseren en inzichten te winnen die écht tellen.",
+								linkUrl: "/ai-voor-bedrijven",
+								linkClass: "c-link--black",
+								linkText: "Meer info",
+								icon: "arrow_up_right"
+							} %}
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
