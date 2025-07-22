@@ -6249,6 +6249,108 @@ blockquote {
   }
 }
 
+.c-banner {
+  background: #FFEBE0;
+  padding: 0.75rem 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transform: translateY(0);
+}
+
+.c-banner::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.c-banner__content {
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.c-banner__notification {
+  display: flex;
+  align-items: center;
+  grid-gap: 0.75rem;
+  gap: 0.75rem;
+  max-width: 1000px;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 721px) {
+  .c-banner__notification {
+    grid-gap: 1rem;
+    gap: 1rem;
+    text-align: left;
+    justify-content: space-around;
+  }
+}
+
+.c-banner__text {
+  font-family: "Work Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.c-banner__link {
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #333333;
+  transition: all 0.2s ease;
+  margin-left: 0.5rem;
+  text-decoration: underline !important;
+}
+
+.c-banner__close {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0;
+  width: 1.75rem;
+  height: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  margin-left: 1rem;
+}
+
+.c-banner__close:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
+  transform: scale(1.1);
+}
+
+.c-banner__close:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+}
+
+body.has-banner {
+  padding-top: 3rem;
+}
+
+@media screen and (min-width: 721px) {
+  body.has-banner {
+    padding-top: 3.25rem;
+  }
+}
+
 .c-card {
   padding: 2rem;
   height: 100%;
@@ -6575,6 +6677,7 @@ blockquote {
 
 .c-site-header__nav-item {
   margin-right: 5rem;
+  color: #333333;
 }
 
 .c-site-header__nav-link {
