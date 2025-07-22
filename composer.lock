@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5bfbcf418570e253fc45b08c809ad496",
+    "content-hash": "c389c784e305a610bb5270160df1509c",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -676,11 +676,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "4.16.4",
+            "version": "4.16.5",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/16e2964e5ff17c2bf4c36a9ee656da51ebf7e911",
-                "reference": "16e2964e5ff17c2bf4c36a9ee656da51ebf7e911",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/3b5692307050a341450f45fc9113cd0c5bc1eb1e",
+                "reference": "3b5692307050a341450f45fc9113cd0c5bc1eb1e",
                 "shasum": ""
             },
             "require": {
@@ -765,7 +765,7 @@
                 "docs": "https://craftcms.com/docs/4.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2025-07-08T23:49:57+00:00"
+            "time": "2025-07-18T00:52:45+00:00"
         },
         {
             "name": "craftcms/html-field",
@@ -1227,6 +1227,42 @@
             ],
             "description": "An SVG sanitizer for PHP",
             "time": "2024-06-18T10:27:15+00:00"
+        },
+        {
+            "name": "ether/seo",
+            "version": "4.2.4",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ethercreative/seo/zipball/f0cf94795f1971508cfe03a82863a4731507a951",
+                "reference": "f0cf94795f1971508cfe03a82863a4731507a951",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0",
+                "php": "^8.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "handle": "seo",
+                "name": "SEO",
+                "developer": "Ether Creative",
+                "developerUrl": "https://ethercreative.co.uk",
+                "class": "ether\\seo\\Seo"
+            },
+            "autoload": {
+                "psr-4": {
+                    "ether\\seo\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "SEO utilities including a unique field type, sitemap, & redirect manager",
+            "support": {
+                "issues": "https://github.com/ethercreative/seo",
+                "docs": "https://github.com/ethercreative/seo/blob/v3/README.md"
+            },
+            "time": "2024-10-09T10:51:26+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -5595,10 +5631,10 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
+    "platform": [],
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }

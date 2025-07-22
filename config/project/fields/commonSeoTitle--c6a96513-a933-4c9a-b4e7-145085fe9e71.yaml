@@ -1,0 +1,19 @@
+columnSuffix: ygdyxoml
+contentColumnType: text
+fieldGroup: b5e692c5-ea4d-4dab-b760-8f0eecf6fe1a # Seo
+handle: commonSeoTitle
+instructions: null
+name: 'Seo title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

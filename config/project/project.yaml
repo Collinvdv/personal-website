@@ -1,4 +1,4 @@
-dateModified: 1753191678
+dateModified: 1753193040
 email:
   fromEmail: collinvdv@gmail.com
   fromName: Delgouffe
@@ -69,7 +69,9 @@ meta:
     afdb79ef-b52e-4f7d-aca6-2e52c045d968: 'Home projects title' # Home projects title
     b3c111d9-0a13-4069-a080-8f14d635954e: Training # Training
     b4d17a57-3144-4b6a-bbed-7f88c637f493: trainingShowReviews # trainingShowReviews
+    b5e692c5-ea4d-4dab-b760-8f0eecf6fe1a: Seo # Seo
     bf9789d9-7284-457f-ba5d-f00f85e08a2e: 'Home about quote' # Home about quote
+    c6a96513-a933-4c9a-b4e7-145085fe9e71: 'Seo title' # Seo title
     c85bfbdf-64ba-41cb-8e42-b02fc3c0c366: Title # Title
     cfc8cba1-bb43-4245-9fc6-d0688339cb79: Content # Content
     d1b05498-6aa4-451c-91c3-e5f05044c6b7: Pages # Pages
@@ -132,17 +134,33 @@ plugins:
       sitemapName: sitemap
       socialImage: ''
       title:
-        -
-          __assoc__:
+        __assoc__:
+          -
+            - 1
             -
-              - key
-              - '2'
+              __assoc__:
+                -
+                  - key
+                  - '771'
+                -
+                  - locked
+                  - '0'
+                -
+                  - template
+                  - ''
+          -
+            - 0
             -
-              - locked
-              - '1'
-            -
-              - template
-              - 'Webdeveloper - {{ siteName }}'
+              __assoc__:
+                -
+                  - key
+                  - '2'
+                -
+                  - locked
+                  - '1'
+                -
+                  - template
+                  - '- {{ siteName }}'
       titleSuffix: null
       twitterHandle: ''
 system:

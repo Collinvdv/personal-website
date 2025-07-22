@@ -190,6 +190,36 @@ fieldLayouts:
         name: Testimonials
         uid: 0928413e-1bbe-48ad-8f8a-d4f7b2576e59
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: c6a96513-a933-4c9a-b4e7-145085fe9e71 # Seo title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 72e826b9-0dd8-4c09-9428-db4e206bdc5e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f160e6f9-051f-46a8-ad71-d037bcbd3eb2 # Seo description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e589132f-f95c-47a8-8b05-87a77cb91251
+            userCondition: null
+            warning: null
+            width: 100
+        name: Seo
+        uid: 4757a4de-3d0a-4ae7-a72e-3c83bed2aad7
+        userCondition: null
 handle: default
 hasTitleField: true
 name: Default

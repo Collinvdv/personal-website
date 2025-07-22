@@ -2,6 +2,7 @@
 	"require": {
 		"craftcms/ckeditor": "^2.0",
 		"craftcms/cms": "^4.0.0",
+		"ether/seo": "4.2.4",
 		"verbb/field-manager": "^3.0",
 		"vlucas/phpdotenv": "^2.4.0"
 	},

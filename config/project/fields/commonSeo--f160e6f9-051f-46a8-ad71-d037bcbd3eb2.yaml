@@ -2,7 +2,7 @@ columnSuffix: null
 contentColumnType: text
 fieldGroup: 5fd5dfe6-4684-4ec8-b94b-0aaae1d9b339 # Home
 handle: commonSeo
-instructions: ''
+instructions: null
 name: 'Seo description'
 searchable: false
 settings:
